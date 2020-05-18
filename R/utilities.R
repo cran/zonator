@@ -309,7 +309,7 @@ line_as_string <- function(x) {
 #' @return A numeric vector of the same length of x and y containing matched
 #' column indexes.
 #'
-#' @keywords zonation, results
+#' @keywords zonation results
 #' @author Joona Lehtomaki <joona.lehtomaki@@gmail.com>
 #'
 #' @export
@@ -376,7 +376,7 @@ map_indexes <- function(x, y) {
 #'
 #' @return \code{ZGroupCurvesDataFrame} with new group statistics.
 #'
-#' @keywords zonation, results
+#' @keywords zonation results
 #' @author Joona Lehtomaki <joona.lehtomaki@@gmail.com>
 #'
 #' @export
@@ -454,23 +454,6 @@ require_package <- function(package, ...) {
   }
 }
 
-#' Set the package options to point to a correct location of the Zonation
-#' tutorial
-#'
-#' @param x Character string directory path.
-#'
-#' @author Joona Lehtomaki \email{joona.lehtomaki@@gmail.com}
-#' @export
-#'
-set_tutorialdir <- function(x) {
-  if (file.exists(x)) {
-    assign("tutorial.dir", x, envir=.options)
-  } else {
-    warning(paste("Could not set tutorial directory path"), x,
-            "Path does not exist.")
-  }
-}
-
 #' Get the directory of Zonation tutorial.
 #'
 #' @return path Character path to Zonation tutorial directory.
@@ -479,7 +462,7 @@ set_tutorialdir <- function(x) {
 #' @export
 #'
 get_tutorialdir <- function() {
-  return(get("tutorial.dir", .options))
+  return(get_options()$tutorial.dir)
 }
 
 #' Get subset of curves/group curves columns.

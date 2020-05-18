@@ -1,4 +1,4 @@
-## ----echo = FALSE, message = FALSE---------------------------------------
+## ----echo = FALSE, message = FALSE------------------------------------------------------------------------------------
 hasData <- requireNamespace("zdat", quietly = TRUE) 
 if (!hasData) {
   knitr::opts_chunk$set(eval = FALSE)

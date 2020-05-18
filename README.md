@@ -12,10 +12,10 @@
 
 `zonator` is a utility R package for dealing with various tasks related to
 Zonation conservation prioritization software. The package started out as a collection
-of helper scripts which have now been packages for anybody interested in using
+of helper scripts which have now been packaged for anybody interested in using
 a familiar tool (R) in setting up Zonation runs and managing Zonation results.
 
-Functions and classes found in `zonator` can be useful for following stages
+Functions and classes found in `zonator` can be useful for the following stages
 of running a Zonation analysis.
 
 1. Setting up a Zonation project and pre-processing files ([examples](https://cbig.github.io/zonator/articles/zonator-project.html)).
@@ -26,27 +26,32 @@ of running a Zonation analysis.
 
 ### Release version
 
+**NOTE: As of 2019-03-15 `zonator` isn't on CRAN. Hopefully it will get back there soon, but in the meantime you can install it directly from Github:**
+
 You can install the latest release version from CRAN:
 
 ```
-install.packages("zonator")
+install.packages("remotes")
+remotes::install_github("cbig/zonator")
 ```
+
+
 
 ### Development version
 
 Alternatively, you can install the latest (potentially unstable) development version from Github.
 
-1. Make sure you have package `devtools` installed and loaded in R:  
+1. Make sure you have package `remotes` installed and loaded in R:  
 
 ```
 # Open R prompt or RStudio and type the following on the command line
-install.packages("devtools")
+install.packages("remotes")
 ```  
 
 2. Then install `zonator` directly from GitHub by running the following line in R:  
 
 ```
-devtools::install_github("cbig/zonator", ref = "develop", build_vignettes = TRUE)
+remotes::install_github("cbig/zonator", ref = "develop", build_vignettes = TRUE)
 ```  
 
 ## Examples

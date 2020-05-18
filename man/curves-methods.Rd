@@ -2,14 +2,12 @@
 % Please edit documentation in R/AllGenerics.R, R/ZCurvesDataFrame-methods.R,
 %   R/ZGroupCurvesDataFrame-methods.R, R/zresults-methods.R,
 %   R/zvariant-methods.R
-\docType{methods}
 \name{curves}
 \alias{curves}
 \alias{curves,ZCurvesDataFrame-method}
 \alias{curves,ZGroupCurvesDataFrame-method}
 \alias{curves,Zresults-method}
 \alias{curves,Zvariant-method}
-\alias{curves,Zresults-method}
 \title{Get curves results data of a Z* object.}
 \usage{
 curves(x, cols = NULL, groups = FALSE, lost.lower = 0, lost.upper = 1)
@@ -18,11 +16,9 @@ curves(x, cols = NULL, groups = FALSE, lost.lower = 0, lost.upper = 1)
 
 \S4method{curves}{ZGroupCurvesDataFrame}(x, cols = NULL)
 
-\S4method{curves}{Zresults}(x, cols = NULL, groups = FALSE,
-  lost.lower = 0, lost.upper = 1)
+\S4method{curves}{Zresults}(x, cols = NULL, groups = FALSE, lost.lower = 0, lost.upper = 1)
 
-\S4method{curves}{Zvariant}(x, cols = NULL, groups = FALSE,
-  lost.lower = 0, lost.upper = 1)
+\S4method{curves}{Zvariant}(x, cols = NULL, groups = FALSE, lost.lower = 0, lost.upper = 1)
 }
 \arguments{
 \item{x}{Z* object.}
